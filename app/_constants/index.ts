@@ -35,3 +35,22 @@ export const navigationMenu = [
         icon: '/assets/icons/van.svg'
     },
 ]
+
+export const appHeader = [
+    {
+        id: 1,
+        title: 'Home'
+    },
+    {
+        id: 2,
+        title: 'Timeline'
+    },
+    {
+        id: 3,
+        title: 'Chat'
+    },
+    {
+        id: 4,
+        title: 'Assigned to you'
+    },
+]

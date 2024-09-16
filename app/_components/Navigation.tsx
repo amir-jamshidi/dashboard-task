@@ -14,7 +14,7 @@ const Navigation = () => {
                 {navigationMenu.map(menu => (
                     <div key={menu.id} className='w-full h-14 flex flex-col justify-center items-center relative'>
                         <Image src={menu.icon} width={24} height={24} alt={`${menu.title} Icon`} />
-                        <p className='text-[10px] text-center text-primary'>{menu.title}</p>
+                        <p className={`${selected === menu.id ? 'text-secondary' : 'text-primary'} text-[10px] text-center`}>{menu.title}</p>
                         {selected === menu.id && (
                             <span className='flex bg-secondary top-1 bottom-1 rounded-[20px] w-0.5 absolute left-0.5'></span>
                         )}
